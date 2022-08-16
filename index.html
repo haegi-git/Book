@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/search.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+  <div class="login-bg">
+    <form action="#" id="login-form">
+      <label for="login" id="login-label">Your name</label>
+      <input type="text" id="login" placeholder="Your name">
+    </form>
+  </div>
+
+    <nav class="nav-bar">
+      <form action="#" id="search-form">
+      <input type="text" placeholder="책 검색하세요" id="search">
+      <i class="fas fa-search fa-lg"></i>
+    </form>
+        
+        <h4 class="user"></h4>
+
+        <div class="search-book none">
+          
+        </div>
+    </nav>
+
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+  </div>
+
+  <div class="title">
+    <h4>베스트셀러</h4>
+  </div>
+    
+    <div class="books">
+        
+
+    </div>
+
+    <div class="modal-bg">
+        <div class="modal">
+            <div class="modal-book">
+                
+            </div>
+
+            <div class="modal-comment">
+
+              
+              <div class="modal-comment-text">
+                <h2 style="margin-bottom: 10px;">Comment</h2>
+                <div class="modal-comment-text-box">
+                  <div class="comment-user">철수</div>
+                  <div class="comment">그냥 있는 댓글</div>
+                  <div class="delete"><i class="fas fa-times"></i></div>
+                </div>
+                
+              </div>
+              
+
+              <form action="#" id="comment-form">
+                
+                <input type="text" id="comment-input" placeholder="Comment">
+              </form>
+
+            </div>
+        </div>
+        <i class="fas fa-times fa-4x close"></i>
+    </div>
+    <div class="test">
+      
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fb10181957.js" crossorigin="anonymous"></script>
+    <script src="./js/api.js"></script>
+    <script src="./js/slide.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/comment.js"></script>
+</body>
+</html>     
